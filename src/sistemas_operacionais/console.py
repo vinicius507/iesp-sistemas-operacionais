@@ -1,5 +1,3 @@
-from typing import Never
-
 import typer
 from rich.console import Console
 
