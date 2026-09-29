@@ -78,3 +78,10 @@ $ so --help
   ✓ processo criado com PID 210597
   ✓ processo 210597 finalizado com código 0
   ```
+
+## Autores
+
+O projeto foi desenvolvido em Pair Programming por:
+
+- [Thyago Araújo](https://github.com/ThyagodeAraujo)
+- [Vinícius Oliveira](https://github.com/vinicius507)
