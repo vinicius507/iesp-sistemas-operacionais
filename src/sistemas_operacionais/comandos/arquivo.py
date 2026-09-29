@@ -56,7 +56,7 @@ def ler(
     """
     try:
         with open(arquivo, "r") as f:
-            print(f"[bold] {arquivo}:[/bold]")
+            print(f"[bold]📄 {arquivo}:[/bold]")
             print(f.read())
     except PermissionError:
         raise console.error("você não possui permissão para ler o arquivo")

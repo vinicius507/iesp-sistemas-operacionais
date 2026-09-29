@@ -7,7 +7,7 @@ console = Console(stderr=True)
 
 
 def success(msg: str) -> None:
-    console.print("[bold green][/bold green]", msg, sep=" ")
+    console.print("[bold green]✓[/bold green]", msg, sep=" ")
 
 
 def error(msg: str, *, exit_code: int = 1) -> typer.Exit:

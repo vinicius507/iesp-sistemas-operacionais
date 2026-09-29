@@ -32,13 +32,13 @@ def listar(caminho: Annotated[Path, typer.Argument(default_factory=lambda: Path(
     try:
         entradas = sorted(os.listdir(caminho))
 
-        print(f"[bold] {caminho}[/bold]")
+        print(f"[bold]📂 {caminho}[/bold]")
         for entrada in entradas:
             completo = Path(caminho, entrada)
             if completo.is_dir():
-                print(f"[bold blue] {entrada}/[/bold blue]")
+                print(f"[bold blue]📁 {entrada}/[/bold blue]")
                 continue
-            print(f" {entrada}")
+            print(f"📄 {entrada}")
     except PermissionError:
         raise console.error("você não possui permissão para listar o diretório")
     except FileNotFoundError:

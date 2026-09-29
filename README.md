@@ -54,27 +54,27 @@ $ so --help
 - **Criar arquivo:**
   ```bash
   $ so arquivo criar teste.txt
-   teste.txt criado com sucesso
+  ✓ teste.txt criado com sucesso
   ```
 - **Listar diretórios**
   ```bash
   $ so diretorio listar
-   .
-   .git/
-   .gitignore
-   .python-version
-   .venv/
-   README.md
-   pyproject.toml
-   src/
-   teste.txt
-   uv.lock
+  📁 .
+  📁 .git/
+  📄 .gitignore
+  📄 .python-version
+  📁 .venv/
+  📄 README.md
+  📄 pyproject.toml
+  📁 src/
+  📄 teste.txt
+  📄 uv.lock
   ```
 - **Executar comando:**
   ```bash
   $ so processo executar echo "Olá, Mundo"
   $ echo Olá, Mundo
   Olá, Mundo
-   processo criado com PID 210597
-   processo 210597 finalizado com código 0
+  ✓ processo criado com PID 210597
+  ✓ processo 210597 finalizado com código 0
   ```
