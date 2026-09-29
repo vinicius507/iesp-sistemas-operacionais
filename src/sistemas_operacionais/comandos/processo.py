@@ -30,7 +30,9 @@ def executar(ctx: typer.Context, comando: Annotated[str, typer.Argument()]):
     Cria um processo filho, exibe seu PID e aguarda sua finalização
     """
     try:
-        print(f"[bold]$[/bold] {comando} {' '.join(ctx.args)}")
+        print(
+            f"[bold]$[/bold] {comando} {' '.join(f'"{arg}"' if ' ' in arg else arg for arg in ctx.args)}"
+        )
         args = [comando, *ctx.args]
         processo = subprocess.Popen(args)
         console.success(f"processo criado com PID [bold]{processo.pid}[/bold]")
